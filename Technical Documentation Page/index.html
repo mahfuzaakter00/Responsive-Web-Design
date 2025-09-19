@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div>
+        <nav id="navbar">
+            <a id="theme-toggle"><i class="fas fa-lightbulb mode-icon" id="mode-icon"></i></a>
+            
+            <header>Responsive Web Design Guide</header>
+            <a class="nav-link" href="#Introduction_to_Responsive_Design">Introduction to Responsive Design</a>
+            <a class="nav-link" href="#Viewport_and_Media_Queries">Viewport and Media Queries</a>
+            <a class="nav-link" href="#Flexible_Layouts">Flexible Layouts</a>
+            <a class="nav-link" href="#Responsive_Typography_and_Images">Responsive Typography and Images</a>
+            <a class="nav-link" href="#Mobile-First_Design">Mobile-First Design</a>
+            <a class="nav-link" href="#Common_Mistakes_in_Responsive_Design">Common Mistakes in Responsive Design</a>
+            <a class="nav-link" href="#Testing_Responsiveness_in_Dev_Tools">Testing Responsiveness in Dev Tools</a>
+            <a class="nav-link" href="#Resources_&_Further_Reading">Resources & Further Reading</a>
+            
+        </nav>
+    </div>
+
+    <div>
+        <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Responsive_Design">
+            <header>Introduction to Responsive Design</header>
+            <p>Responsive web design ensures that your website looks great on all devices.</p>
+            <p>It adapts layout, typography, and images based on screen size.</p>
+            <code>/* Example */ body { max-width: 100vw; }</code>
+            <p>This improves accessibility, performance, and user satisfaction.</p>
+            <ul>
+            <li>Flexible Layouts</li>
+            <li>Media Queries</li>
+            <li>Responsive Units</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Viewport_and_Media_Queries">
+            <header>Viewport and Media Queries</header>
+            <p>The viewport controls how your page scales on different devices.</p>
+            <p>Media queries apply styles conditionally.</p>
+            <code>@media (max-width: 600px) { body { font-size: 14px; } }</code>
+            <p>Always define the viewport meta tag in HTML.</p>
+            <p>Media queries enable mobile-first styling.</p>
+        </section>
+
+        <section class="main-section" id="Flexible_Layouts">
+            <header>Flexible Layouts</header>
+            <p>Flexbox and Grid are powerful layout tools.</p>
+            <p>Flexbox is great for one-dimensional layouts.</p>
+            <code>display: flex;</code>
+            <p>Grid handles complex two-dimensional layouts.</p>
+            <code>display: grid; grid-template-columns: 1fr 1fr;</code>
+            <ul>
+            <li>Flex container and items</li>
+            <li>Grid tracks and gaps</li>
+            <li>Responsive column widths</li>
+            </ul>
+            
+        </section>
+
+        <section class="main-section" id="Responsive_Typography_and_Images">
+            <header>Responsive Typography and Images</header>
+            <p>Use relative units like `em`, `rem`, and `vw` for fonts.</p>
+            <p>Use `max-width: 100%` on images to make them scale down.</p>
+            <code>img { max-width: 100%; height: auto; }</code>
+            <p>Set line-heights and spacing for readability on all screens.</p>
+            <p>Responsive text improves UX on small devices.</p>
+        </section>
+
+        <section class="main-section" id="Mobile-First_Design">
+            <header>Mobile-First Design</header>
+            <p>Mobile-first means designing for small screens first.</p>
+            <p>You scale up with media queries.</p>
+            <code>@media (min-width: 768px) { .container { padding: 2rem; } }</code>
+            <p>This ensures optimal performance and readability.</p>
+            <ul>
+            <li>Start with a simple base</li>
+            <li>Add enhancements for larger screens</li>
+            <li>Keep navigation accessible</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Common_Mistakes_in_Responsive_Design">
+            <header>Common Mistakes in Responsive Design</header>
+            <p>Even experienced developers can make mistakes when implementing responsive layouts. Here are some common pitfalls to watch out for:</p>
+            
+            <ul>
+                <li><strong>Missing the viewport meta tag:</strong> Without it, your site won’t scale correctly on mobile devices.</li>
+                <li><strong>Using fixed widths:</strong> Relying only on <code>px</code> instead of flexible units like <code>%</code>, <code>em</code>, or <code>vw/vh</code>.</li>
+                <li><strong>Not using media queries effectively:</strong> Writing too many, too few, or redundant queries.</li>
+                <li><strong>Testing only on desktops:</strong> Skipping real device testing leads to poor mobile UX.</li>
+                <li><strong>Not considering landscape mode:</strong> Especially on tablets and mobile phones.</li>
+                <li><strong>Overcomplicating layouts:</strong> Trying to “fix” everything with media queries instead of using flexible design principles.</li>
+            </ul>
+
+            <!-- <div class="summary-box">
+                <strong>Tip:</strong> Keep your layout fluid, test on multiple screen sizes, and start with a mobile-first approach.
+            </div> -->
+            </section>
+            <section class="main-section" id="Testing_Responsiveness_in_Dev_Tools">
+                <header>Testing Responsiveness in Dev Tools</header>
+                <p>Modern browsers provide powerful developer tools to test how your website behaves across screen sizes and network conditions. Here's how to use them effectively:</p>
+
+                <ul>
+                    <li><strong>Device Toolbar (Chrome DevTools):</strong> Toggle between mobile and desktop modes and test across various simulated devices.</li>
+                    <li><strong>Responsive Mode:</strong> Manually adjust width and height to see how your layout responds in real time.</li>
+                    <li><strong>Rotate Screen:</strong> Simulate portrait and landscape orientations easily with a single click.</li>
+                    <li><strong>Network Throttling:</strong> Emulate slow networks (like 3G) to test load performance.</li>
+                    <li><strong>Lighthouse Audits:</strong> Analyze responsiveness, accessibility, and performance with one click.</li>
+                </ul>
+
+                <p>You can access Chrome DevTools by right-clicking anywhere on the page and selecting <code>Inspect</code>, or by pressing <code>Ctrl+Shift+I</code> (Windows) or <code>Cmd+Opt+I</code> (Mac).</p>
+
+                <!-- <div class="summary-box">
+                    <strong>Pro Tip:</strong> Always test with both simulated tools and actual devices when possible!
+                </div> -->
+            </section>
+            <section class="main-section" id="Resources_&_Further_Reading">
+                <header>Resources & Further Reading</header>
+                <p>Here are some trusted resources to deepen your understanding of responsive design:</p>
+
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">📘 MDN: Responsive Design Guide</a> – A complete beginner-friendly guide.</li>
+                    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">📏 CSS-Tricks: Flexbox Guide</a> – Visual cheat sheet for Flexbox properties.</li>
+                    <li><a href="https://web.dev/learn/design/" target="_blank">💡 Google Web.dev</a> – Design principles and accessibility tips.</li>
+                    <li><a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/" target="_blank">📰 Smashing Magazine</a> – Best practices and design techniques.</li>
+                    <li><a href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank">📚 W3Schools Responsive Web Design</a> – Simple, interactive examples.</li>
+                </ul>
+
+                <p>Bookmark these links and keep learning—responsive design evolves with technology!</p>
+            </section>
+
+
+        </main>
+    </div>
+    
+        <footer class="footer">
+            <p>Built by Mahfuza Akter &mdash; <a href="https://mahfuzaakter.com">Portfolio</a> | <a href="mailto:amahfuza1998@email.com">Email</a></p>
+        </footer>
+        <script>
+            $(document).ready(function(){
+                $("#theme-toggle").click(function(){
+                    $("body").toggleClass("darkMode").css({
+                        "transition": "background-color 1s, color 1s"
+                    });
+                    
+
+                    if($(this).children(".mode-icon").hasClass("far fa-lightbulb")){
+                        $(this).children(".mode-icon").removeClass("far fa-lightbulb").addClass("fas fa-lightbulb").addClass("pulse-glow");
+                        setTimeout(()=>$(this).children(".mode-icon").removeClass("pulse-glow"),500);
+                    }
+                    else{
+                        $(this).children(".mode-icon").removeClass("fas fa-lightbulb").addClass("far fa-lightbulb"); 
+                    
+                    }
+                    
+                });
+
+                // jQuery scroll-spy to highlight nav-links while scrolling the related sections
+
+                $(window).on("scroll", function () {
+                    $("section").each(function () {
+                        if (
+                            $(window).scrollTop() >= $(this).offset().top &&
+                            $(window).scrollTop() <= $(this).offset().top + $(this).outerHeight()
+                        ) {
+                            $(".nav-link").removeClass("active");
+                            $(".nav-link[href='#" + $(this).attr("id") + "']").addClass("active");
+                        }
+                    });
+                });
+
+
+            });
+        </script>
+  </body>
+</html>
