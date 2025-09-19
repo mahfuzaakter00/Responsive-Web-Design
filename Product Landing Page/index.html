@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitesByMahfuza</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="myScript.js"></script>
+
+</head>
+<body>
+  
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/cover.png" alt="SitesByMahfuza Logo" id="header-img">
+            </div>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#hero">Home</a></li>
+                <li><a class="nav-link" href="#services">Services</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#demo">Demo</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+        <div class="container hero-content">
+            <h1>Cost-Friendly, Detail-Oriented Web Design</h1>
+            <p>Helping small businesses launch their first small/medium responsive websites with care and dedication.</p>
+            <a href="#contact" class="btn1">Get Your Website</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Responsive Web Design</h3>
+                    <p>Beautiful, mobile-friendly websites that work on any device.</p>
+                </div>
+                <div class="card">
+                    <h3>Custom Development</h3>
+                    <p>Unique features tailored to your business needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Affordable Packages</h3>
+                    <p>Professional websites at prices that fit small business budgets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section light-bg">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Mahfuza, a dedicated freelance web designer passionate about helping small businesses make their online presence shine without breaking the bank. I handle each project personally, ensuring quality and attention to detail every step of the way.</p>
+        </div>
+    </section>
+
+    <!-- video section -->
+    <section id="demo" class="section light-bg">
+        <div class="container video">
+            <h2>See It In Action</h2>
+            <iframe 
+            id="video"
+            width="500" 
+            height="315" 
+            src="https://www.youtube.com/embed/3tLb3i7GB38?si=ABbOhhchny6bnFCL" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Ready to launch your website? Let's talk!</p>
+            <form id="form" name="form" action="mailto::mahfuzanahida@gmail.com">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input id="email" name="email" type="email" placeholder="Enter Your Email" required>
+                <textarea id="textarea" type="textarea" placeholder="Your Message" required></textarea>
+                <button id="submit" type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 SitesByMahfuza. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
