@@ -4,13 +4,25 @@ $(document).ready(function(){
             "transition": "background-color 1s, color 1s"
         });
         
+        $("#navbar").toggleClass("darkNav").css({
+            "transition": "background-color 1s, color 1s"
+        });
 
-        if($(this).children(".mode-icon").hasClass("far fa-lightbulb")){
-            $(this).children(".mode-icon").removeClass("far fa-lightbulb").addClass("fas fa-lightbulb").addClass("pulse-glow");
+        $(".nav-link").toggleClass("darkLink").css({
+            "transition": "background-color 1s, color 1s"
+            
+        });
+
+        $("code").toggleClass("darkCode").css({
+            "transition": "background-color 1s, color 1s"
+        });
+
+        if($(this).children(".mode-icon").hasClass("fas fa-lightbulb")){
+            $(this).children(".mode-icon").removeClass("fas fa-lightbulb").addClass("far fa-lightbulb").addClass("pulse-glow");
             setTimeout(()=>$(this).children(".mode-icon").removeClass("pulse-glow"),500);
         }
         else{
-            $(this).children(".mode-icon").removeClass("fas fa-lightbulb").addClass("far fa-lightbulb"); 
+            $(this).children(".mode-icon").removeClass("far fa-lightbulb").addClass("fas fa-lightbulb"); 
         
         }
         
@@ -29,6 +41,7 @@ $(document).ready(function(){
             }
         });
     });
+
 
 
 });
