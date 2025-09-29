@@ -18,7 +18,20 @@ body {
     background-color: black;
     color: rgb(141, 129, 129);
 }
+#navbar.darkNav{
+    background-color: #f9f9f9;
+    color: #333;
+}
 
+.nav-link.darkLink{
+    /* background-color: #f9f9f9; */
+    color: #333;
+}
+
+code.darkCode{
+    background-color: #202a42;
+    color: #9fb1d1;
+}
 /* make your lightbulb glow when in dark mode */
 @keyframes pulse {
     0% {
@@ -87,12 +100,20 @@ body {
     background-color: #1e293b;
 }
 
+.nav-link.darkLink:hover{
+    background-color: #e2e8f0;
+}
+
 .active {
     border-left: 3px solid #38bdf8;
     background-color: #1e293b;
     scroll-behavior: smooth;
     font-weight: bold;
     border-bottom: 2px solid #f39c12;
+}
+
+.nav-link.darkLink.active{
+    background-color: #dde6f8;
 }
 
 /* Main doc styles */
@@ -170,4 +191,5 @@ li {
         display: inline-block;
         margin-right: 1rem;
     }
+
 }
