@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sleep Wellness Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <a id="theme-toggle"><i class="fas fa-lightbulb mode-icon" id="mode-icon"></i></a>
+      <h1 id="title">Sleep Wellness Survey</h1> 
+    <p id="description">Let's do a sleep routine & hygiene check-in!</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label">Enter Your Full Name: <input id="name" name="name" type="text" placeholder="Enter your Name"required /></label>
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label"> How many hours of sleep do you get in a day, on average? <input id="number" type="number" name="age" min="1" max="24" placeholder="Sleep hours per day"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Which type of sleeper are you?
+          <select id="dropdown" name="sleepType">
+            <option value="">(select one)</option>
+            <option value="1">Early sleeper(Evening)</option>
+            <option value="2">Midnight sleeper</option>
+            <option value="3">Late-night sleeper</option>
+            <option value="4">Not a night sleeper</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you feel well-rested when you wake up?</legend>
+        <label><input name="rest-stat" type="radio" value="yes" class="inline" checked /> Yes </label>
+        <label><input name="rest-stat" type="radio" value="no" class="inline" /> No</label>
+        <label><input name="rest-stat" type="radio" value="sometimes" class="inline" /> Sometimes</label>
+      </fieldset>
+      <fieldset>
+        <legend>What helps you wind down before bed?</legend>
+          <label><input class="inline" type="checkbox" name="down-time" value="reading"/>Reading Books</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="yoga"/>Yoga</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="temperature"/>Room temperature 18(deg)</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="meditation"/>Meditation</label>
+            <label>
+            <input class="inline" type="checkbox" name="downtime" value="breathing"/>Breathing Exercises</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="journaling"/>Journaling</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="prayer"/>Prayer</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="milk"/>Warm Milk</label>
+            <label>
+            <input class="inline" type="checkbox" name="down-time" value="tea"/>Herbal tea</label>
+            </fieldset>
+      <fieldset>
+        <label for="suggestion">If you are a good sleeper, let others know what helps you sleep well
+          <textarea id="suggestion" name="bio" rows="3" cols="30" placeholder="Your suggestion(s).."></textarea>
+        </label>
+        </fieldset>
+  <input id="submit" type="submit" value="Submit"/>
+    </form>
+    </div>
+  </body>
+</html>
