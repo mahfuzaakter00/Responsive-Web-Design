@@ -25,7 +25,7 @@ body {
 #navbar ul {
   list-style: none;
   display: flex;
-  margin-right: 2rem;
+  margin-right: 1rem;
   gap: 2rem;
 }
 
@@ -227,3 +227,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
