@@ -13,10 +13,7 @@ $(document).ready(function(){
             setTimeout(()=>$(this).children(".mode-icon").removeClass("pulse-glow"),500);
         }
         else{
-            $(this).children(".mode-icon").removeClass("far fa-lightbulb").addClass("fas fa-lightbulb"); 
-        
-        }
-        
+            $(this).children(".mode-icon").removeClass("far fa-lightbulb").addClass("fas fa-lightbulb");
+        }        
     });
-
 });
