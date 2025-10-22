@@ -32,7 +32,7 @@ code.darkCode{
     background-color: #202a42;
     color: #9fb1d1;
 }
-/* make your lightbulb glow when in dark mode */
+/* makes lightbulb glow when in dark mode */
 @keyframes pulse {
     0% {
         text-shadow: 0 0 1px white;
@@ -193,3 +193,4 @@ li {
     }
 
 }
+
