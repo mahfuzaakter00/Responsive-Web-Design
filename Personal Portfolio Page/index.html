@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahfuza’s Portfolio</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <div class="welcome-content">
+      <h1>Mahfuza Akter</h1>
+      <p>I build responsive, cost-friendly websites for small businesses and personal brands.</p>
+      <ul>
+        <li>
+          <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details">
+            <i class="fab fa-github fa-lg"></i> GITHUB</a>
+        </li>
+        <li>
+          <a id="profile-link" href="https://linkedin.com/freecodecamp" target="_blank" class="btn contact-details">
+                <i class="fab fa-linkedin fa-lg"></i> LINKEDIN</a>
+        </li>
+        <li>
+          <a id="profile-link" href="#contact" target="_blank" class="btn contact-details">
+                <i class="fas fa-envelope fa-lg"></i> EMAIL</a>
+        </li>
+      </ul>
+      <div class="myProject">
+        <a href="#projects" class="btn">See My Work</a>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Responsive Web Design Projects</h2>
+    <div class="project-grid">
+      <a href="https://mahfuzaakter00.github.io/Responsive-Web-Design/Product Landing Page" target="_blank" class="project project-tile">
+        <img class="project-image" src="images/PLP.jpg" alt="SitesByMahfuza project screenshot">
+        <p class="project-title">
+          Product Landing Page
+        </p>
+      </a>
+      <a href="https://mahfuzaakter00.github.io/Responsive-Web-Design/Technical Documentation Page" target="_blank" class="project project-tile">
+        <img class="project-image" src="images/TDP_LM.jpg" alt="Responsive Documentation Page screenshot">
+        <p class="project-title">
+            Technical Documentation Page
+        </p>
+      </a>
+      <a href="https://mahfuzaakter00.github.io/Responsive-Web-Design/TributePage" target="_blank" class="project project-tile">
+        <img class="project-image" src="images/TP.jpg" alt="Tribute page screenshot">
+        <p class="project-title">
+            Tribute Page
+        </p>
+      </a>
+      <a href="https://mahfuzaakter00.github.io/Responsive-Web-Design/Survey Form" target="_blank" class="project project-tile">
+        <img class="project-image" src="images/SF_LM.jpg" alt="Survey form project screenshot">
+        <p class="project-title">
+            Survey Form
+          </p>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a front-end developer passionate about building clean, responsive, and user-friendly websites. 
+      Reading taught me focus and patience — skills I now bring into coding.
+    </p>
+    <ul class="skills">
+      <li>Advanced HTML & CSS</li>
+      <li>Intermediate JavaScript</li>
+      <li>Responsive Design (FCC Certified)</li>
+      <li>Beginner WordPress & Logo Design</li>
+    </ul>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Let’s Connect</h2>
+    <form id="form" name="form" action="mailto::mahfuzanahida@gmail.com">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input id="email" name="email" type="email" placeholder="Enter Your Email" required>
+        <textarea id="textarea" type="textarea" placeholder="Your Message" required></textarea>
+        <button id="submit" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mahfuza Akter</p>
+  </footer>
+
+</body>
+</html>
