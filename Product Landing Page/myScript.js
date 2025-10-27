@@ -9,8 +9,8 @@ $(document).ready(function(){
             const sectionBottom = sectionTop + $(this).outerHeight();
 
             if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
-                $(".nav-links a").removeClass("active");
-                $(".nav-links a[href='#" + $(this).attr("id") + "']").addClass("active"); 
+                $(".nav-link").removeClass("active");
+                $(".nav-link[href='#" + $(this).attr("id") + "']").addClass("active"); 
             }
 
         });
@@ -28,9 +28,10 @@ $(document).ready(function(){
     // highlightOnScroll();
 
     // // Run on nav link click
-    $(".nav-links a").on("click", function () {
-        $(".nav-links a").removeClass("active");
+    $(".nav-link").on("click", function () {
+        $(".nav-link").removeClass("active");
         $(this).addClass("active");
     });
     
 });
+
