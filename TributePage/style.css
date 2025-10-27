@@ -17,7 +17,7 @@ body {
 .book {
   display: flex;
   width: clamp(300px, 90vw, 1000px);
-  height: clamp(220px, 67.5vw, 750px);
+  height: clamp(220px, 75vw, 750px);
   padding: clamp(8px, 4.3vw, 18px);
   background: #3a2416; /* leather cover */
   border-radius: 12px;
@@ -172,7 +172,7 @@ body {
 
 #tribute-info h2, #tribute-info-r h2 {
   font-family: "Palatino Linotype", serif;
-  font-size: clamp(0.6rem, 2.4vw, 1.5rem);
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
   margin: clamp(0.5rem, 3vw, 1.5rem) 0 clamp(0.35rem, 1.75vw, 0.75rem);
   color: #7a3e2e;
   text-align: center;
@@ -181,7 +181,7 @@ body {
 /* Lists inside tribute-info */
 
 #tribute-info li,#tribute-info-r li {
-  margin: clamp(0.1rem, 0.5vw, 1.5rem) 0;
+  margin: clamp(0.1rem, 0.4vw, 1.5rem) 0;
 }
 
 /* Timeline */
@@ -199,7 +199,7 @@ body {
 #tribute-info-r p,
 #tribute-info li,
 #tribute-info-r li {
-  font-size: clamp(0.3rem, 1.22vw, 1.2rem);
+  font-size: clamp(0.35rem, 1.5vw, 1.2rem);
 }
 
 /* Timeline spans */
