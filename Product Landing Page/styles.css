@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-color: #177775 #fff;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -222,4 +222,5 @@ footer {
   }
   
 }
+
 
