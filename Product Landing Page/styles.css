@@ -64,9 +64,15 @@ nav .logo img {
   background-color: #28D2BF;
 }
 
-.nav-links a.active{
+.nav-links li.active{
   color: white;
-  background-color: #177775;
+  background-color: #28D2BF;
+  font-weight: bolder;
+}
+
+.nav-link.active{
+  color: white;
+  background-color: #28D2BF;
   font-weight: bolder;
 }
 
@@ -102,7 +108,7 @@ nav .logo img {
 /* Sections */
 .section {
   padding: 3rem 0;
-  scroll-margin-top: calc(2rem + 150px);
+  scroll-margin-top: calc(2rem + 150px + 6rem); /*taking into consideration the top and bottom section paddings (3rem each)*/
 }
 
 .light-bg {
@@ -118,7 +124,7 @@ nav .logo img {
 }
 
 .card {
-  background: white;
+  background: rgb(250, 246, 246);
   padding: 1.5rem;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -208,7 +214,7 @@ footer {
   
   .section{
     padding: 3rem 0;
-    scroll-margin-top: calc(2rem + 260px);
+    scroll-margin-top: calc(2rem + 260px + 6rem); /*taking into consideration the top and bottom section paddings (3rem each)*/
   }
 
   #video{
