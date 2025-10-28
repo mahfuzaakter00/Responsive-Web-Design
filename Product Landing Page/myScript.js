@@ -29,11 +29,12 @@ $(document).ready(function(){
 
     // // Run on nav link click
     $(".nav-link").on("click", function () {
-        $(".nav-links li").removeClass("active");
+        $(".nav-link").removeClass("active");
         $(this).addClass("active");
     });
     
 });
+
 
 
 
