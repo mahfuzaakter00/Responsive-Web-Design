@@ -28,12 +28,13 @@ $(document).ready(function(){
     // highlightOnScroll();
 
     // // Run on nav link click
-    $(".nav-links li").on("click", function () {
-        $(".nav-links li").removeClass("active");
+    $(".nav-link").on("click", function () {
+        $(".nav-link").removeClass("active");
         $(this).addClass("active");
     });
     
 });
+
 
 
 
