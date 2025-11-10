@@ -173,7 +173,7 @@ body {
 #tribute-info h2, #tribute-info-r h2 {
   font-family: "Palatino Linotype", serif;
   font-size: clamp(0.5rem, 2vw, 1.5rem);
-  margin: clamp(0.5rem, 1.5vw, 0.75rem) 0 clamp(0.35rem, 1.5vw, 0.75rem);
+  margin: clamp(0.35rem, 1.5vw, 0.75rem) 0 clamp(0.35rem, 1.5vw, 0.75rem);
   color: #7a3e2e;
   text-align: center;
 }
@@ -181,7 +181,7 @@ body {
 /* Lists inside tribute-info */
 
 #tribute-info li,#tribute-info-r li {
-  margin: clamp(0.1rem, 0.4vw, 1.5rem) 0;
+  margin: clamp(0.1rem, 0.4vw, 1.2rem) 0;
 }
 
 /* Timeline */
@@ -255,6 +255,7 @@ footer {
   font-size: clamp(0.7rem, 1vw, 0.9rem);
   color: #666;
 }
+
 
 
 
