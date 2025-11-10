@@ -10,7 +10,7 @@ body {
 
 #theme-toggle {
   font-size: 1.6rem;
-  position: fixed;
+  position: absolute;
   left: 75%;
   top: 5%;
 }
@@ -37,7 +37,7 @@ h1, p {
 }
 
 form {
-  width: 60vw;
+  width: 80vw;
   /* max-width: 500px; */
   /* min-width: 300px; */
   margin: auto;
@@ -123,5 +123,6 @@ textarea, select{
     left: 50%;
   }
 }
+
 
 
