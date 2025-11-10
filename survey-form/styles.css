@@ -8,16 +8,23 @@ body {
   font-size: 16px;
 }
 
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40px;
+  padding: 0.5rem;
+  background-color: #3b3b4f;
+  color: white;
+}
 #theme-toggle {
   font-size: 1.6rem;
-  position: fixed;
-  left: 75%;
-  top: 5%;
 }
 
 body.darkMode {
   background-color: #1b1b32;
-  color: #8d8181;
+  color: #fcfafa;
 }
 
 input.darkMode, textarea.darkMode, select.darkMode{
@@ -36,9 +43,13 @@ h1, p {
   text-align: center;
 }
 
+h1{
+  margin-top: 2em;
+}
+
 form {
-  width: 60vw;
-  max-width: 500px;
+  width: 80vw;
+  max-width: 650px;
   /* min-width: 300px; */
   margin: auto;
   padding-bottom: 2em;
@@ -108,19 +119,10 @@ textarea, select{
 }
 
 /* Media query for responsiveness */
-@media (max-width: 800px) {
-  #theme-toggle{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-  }
-}
-
 @media (max-width: 500px){
   #theme-toggle{
     position: absolute;
-    top: 20px;
-    left: 50%;
+    right: 10%;
   }
 }
 
