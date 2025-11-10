@@ -37,7 +37,7 @@ h1, p {
 }
 
 form {
-  width: 80vw;
+  width: 60vw;
   max-width: 500px;
   /* min-width: 300px; */
   margin: auto;
@@ -123,6 +123,7 @@ textarea, select{
     left: 50%;
   }
 }
+
 
 
 
